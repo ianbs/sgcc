@@ -1,5 +1,6 @@
 import { Exclude, Transform } from 'class-transformer';
 import { IsNotEmpty, IsDate } from 'class-validator';
+import { IsConvenioActive } from 'src/validators/isConvenioActive.validator';
 import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
 import { Colaborador } from './colaborador.model';
 import { Convenio } from './convenio.model';
@@ -72,6 +73,9 @@ export class Exames {
 
   @Transform(({ value }) => {
     return { id: value.id, nome: value.nome };
+  })
+  @IsConvenioActive({
+    message: 'Convenio está inativo',
   })
   @ManyToOne(() => Convenio, (convenio) => convenio.exames, {
     eager: true,
