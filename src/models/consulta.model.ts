@@ -7,7 +7,7 @@ import { Convenio } from './convenio.model';
 import { TipoCaracterAtendimento } from './enums/tipocaracteratendimento.enum';
 import { TipoConsulta } from './enums/tipoconsulta.enum';
 import { TipoIndicacaoAcidente } from './enums/tipoindicacaoacidente.enum';
-import { Paciente } from './Paciente.model';
+import { Paciente } from './paciente.model';
 import { Profissional } from './profissional.model';
 
 @Entity({ name: 'consultas' })

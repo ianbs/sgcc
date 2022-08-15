@@ -6,8 +6,8 @@ import {
   ValidatorConstraintInterface,
   ValidationArguments,
 } from 'class-validator';
-import { Convenio } from 'src/models/Convenio.model';
-import { ConvenioService } from 'src/services/convenio.service';
+import { Convenio } from '../models/convenio.model';
+import { ConvenioService } from '../services/convenio.service';
 
 @Injectable()
 @ValidatorConstraint({ name: 'IsConvenioActive', async: true })

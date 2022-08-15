@@ -1,6 +1,6 @@
 import { Injectable, CanActivate, ExecutionContext } from '@nestjs/common';
 import { Reflector } from '@nestjs/core';
-import { Permissoes } from 'src/models/enums/permissoes.enum';
+import { Permissoes } from '../models/enums/permissoes.enum';
 import { PERMISSOES_KEY } from './permissoes.decorator';
 
 @Injectable()

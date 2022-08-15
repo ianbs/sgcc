@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Colaborador } from 'src/models/colaborador.model';
-import { Endereco } from 'src/models/endereco.model';
-import { Usuario } from 'src/models/usuario.model';
+import { Colaborador } from '../models/colaborador.model';
+import { Endereco } from '../models/endereco.model';
+import { Usuario } from '../models/usuario.model';
 import { Repository } from 'typeorm';
 
 @Injectable()

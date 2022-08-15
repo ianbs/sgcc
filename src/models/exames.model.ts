@@ -4,7 +4,7 @@ import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
 import { Colaborador } from './colaborador.model';
 import { Convenio } from './convenio.model';
 import { TipoCaracterAtendimento } from './enums/tipocaracteratendimento.enum';
-import { Paciente } from './Paciente.model';
+import { Paciente } from './paciente.model';
 import { Profissional } from './profissional.model';
 
 @Entity({ name: 'exames' })

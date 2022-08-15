@@ -8,9 +8,9 @@ import {
   Put,
   UseGuards,
 } from '@nestjs/common';
-import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
-import { Convenio } from 'src/models/convenio.model';
-import { ConvenioService } from 'src/services/convenio.service';
+import { JwtAuthGuard } from '../auth/jwt-auth.guard';
+import { Convenio } from '../models/convenio.model';
+import { ConvenioService } from '../services/convenio.service';
 
 @Controller('convenio')
 export default class ConvenioController {

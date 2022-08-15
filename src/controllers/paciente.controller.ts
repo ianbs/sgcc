@@ -8,9 +8,9 @@ import {
   Put,
   UseGuards,
 } from '@nestjs/common';
-import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
-import { Paciente } from 'src/models/Paciente.model';
-import { PacienteService } from 'src/services/paciente.service';
+import { JwtAuthGuard } from '../auth/jwt-auth.guard';
+import { Paciente } from '../models/Paciente.model';
+import { PacienteService } from '../services/paciente.service';
 
 @Controller('Paciente')
 export default class PacienteController {

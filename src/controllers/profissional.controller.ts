@@ -9,9 +9,9 @@ import {
   Put,
   UseGuards,
 } from '@nestjs/common';
-import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
-import { Profissional } from 'src/models/profissional.model';
-import { ProfissionalService } from 'src/services/profissional.service';
+import { JwtAuthGuard } from '../auth/jwt-auth.guard';
+import { Profissional } from '../models/profissional.model';
+import { ProfissionalService } from '../services/profissional.service';
 
 @Controller('Profissional')
 export default class ProfissionalController {

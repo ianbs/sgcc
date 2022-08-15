@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Consulta } from 'src/models/consulta.model';
+import { Consulta } from '../models/consulta.model';
 import { Repository } from 'typeorm';
 
 @Injectable()

@@ -8,10 +8,10 @@ import {
   Put,
   UseGuards,
 } from '@nestjs/common';
-import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
-import { Exames } from 'src/models/exames.model';
-import { ConvenioService } from 'src/services/convenio.service';
-import { ExamesService } from 'src/services/exames.service';
+import { JwtAuthGuard } from '../auth/jwt-auth.guard';
+import { Exames } from '../models/exames.model';
+import { ConvenioService } from '../services/convenio.service';
+import { ExamesService } from '../services/exames.service';
 
 @Controller('exames')
 export default class ExamesController {

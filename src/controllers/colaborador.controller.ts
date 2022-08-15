@@ -8,9 +8,9 @@ import {
   Put,
   UseGuards,
 } from '@nestjs/common';
-import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
-import { Colaborador } from 'src/models/colaborador.model';
-import { ColaboradorService } from 'src/services/colaborador.service';
+import { JwtAuthGuard } from '../auth/jwt-auth.guard';
+import { Colaborador } from '../models/colaborador.model';
+import { ColaboradorService } from '../services/colaborador.service';
 
 @Controller('colaborador')
 export default class ColaboradorController {
