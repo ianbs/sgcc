@@ -1,6 +1,6 @@
 import { Exclude, Transform } from 'class-transformer';
 import { IsNotEmpty } from 'class-validator';
-import { IsConvenioActive } from 'src/validators/isConvenioActive.validator';
+import { IsConvenioActive } from '../validators/isConvenioActive.validator';
 import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
 import { Colaborador } from './colaborador.model';
 import { Convenio } from './convenio.model';
