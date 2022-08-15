@@ -14,7 +14,7 @@ import { Convenio } from '../models/convenio.model';
 import { Endereco } from '../models/endereco.model';
 import { Estado } from '../models/estado.model';
 import { Exames } from '../models/exames.model';
-import { Paciente } from '../models/Paciente.model';
+import { Paciente } from '../models/paciente.model';
 import { Profissional } from '../models/profissional.model';
 import { Usuario } from '../models/usuario.model';
 import { ColaboradorService } from '../services/colaborador.service';

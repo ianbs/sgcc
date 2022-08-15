@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Convenio } from '../models/Convenio.model';
+import { Convenio } from '../models/convenio.model';
 import { Repository } from 'typeorm';
 
 @Injectable()

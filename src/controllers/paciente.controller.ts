@@ -9,7 +9,7 @@ import {
   UseGuards,
 } from '@nestjs/common';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
-import { Paciente } from '../models/Paciente.model';
+import { Paciente } from '../models/paciente.model';
 import { PacienteService } from '../services/paciente.service';
 
 @Controller('Paciente')
