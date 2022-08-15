@@ -21,11 +21,10 @@ export class IsConvenioActiveConstraint
     args: ValidationArguments,
   ): Promise<boolean> {
     try {
-      await this.convenioService.isActive(convenio);
+      return await this.convenioService.isActive(convenio);
     } catch (e) {
       return true;
     }
-    return false;
   }
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars

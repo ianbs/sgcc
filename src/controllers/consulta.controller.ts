@@ -8,10 +8,10 @@ import {
   Put,
   UseGuards,
 } from '@nestjs/common';
-import { JwtAuthGuard } from '../auth/jwt-auth.guard';
-import { Consulta } from '../models/consulta.model';
-import { ConsultaService } from '../services/consulta.service';
-import { ConvenioService } from '../services/convenio.service';
+import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
+import { Consulta } from 'src/models/consulta.model';
+import { ConsultaService } from 'src/services/consulta.service';
+import { ConvenioService } from 'src/services/convenio.service';
 
 @Controller('Consulta')
 export default class ConsultaController {

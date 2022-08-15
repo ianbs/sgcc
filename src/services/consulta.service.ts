@@ -21,12 +21,12 @@ export class ConsultaService {
     });
   }
 
-  async create(Consulta: Consulta) {
-    this.consultaModel.save(Consulta);
+  async create(consulta: Consulta) {
+    this.consultaModel.save(consulta);
   }
 
-  async alter(Consulta: Consulta): Promise<any> {
-    return this.consultaModel.save(Consulta);
+  async alter(consulta: Consulta): Promise<any> {
+    return this.consultaModel.save(consulta);
   }
 
   async delete(id: number) {
