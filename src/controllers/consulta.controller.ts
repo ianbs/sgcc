@@ -49,4 +49,16 @@ export default class ConsultaController {
   async delete(@Param() params) {
     this.consultaService.delete(params.id);
   }
+
+  @UseGuards(JwtAuthGuard)
+  @Put('/cancel/:id')
+  async cancel(@Param() params) {
+    this.consultaService.cancel(params.id);
+  }
+
+  @UseGuards(JwtAuthGuard)
+  @Put('/active/:id')
+  async active(@Param() params) {
+    this.consultaService.ativar(params.id);
+  }
 }

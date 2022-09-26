@@ -22,7 +22,7 @@ export class ConsultaService {
   }
 
   async create(consulta: Consulta) {
-    this.consultaModel.save(consulta);
+    return this.consultaModel.save(consulta);
   }
 
   async alter(consulta: Consulta): Promise<any> {
@@ -34,5 +34,23 @@ export class ConsultaService {
       where: { id: id },
     });
     this.consultaModel.remove(consulta);
+  }
+
+  async cancel(id: number) {
+    const consulta: Consulta = await this.consultaModel.findOne({
+      where: {id: id},
+    })
+    consulta.cancelado = true;
+    consulta.dataCancelamento = new Date().toJSON();
+    return this.consultaModel.save(consulta);
+  }
+
+  async ativar(id: number) {
+    const consulta: Consulta = await this.consultaModel.findOne({
+      where: {id: id},
+    })
+    consulta.cancelado = false;
+    consulta.dataCancelamento = null;
+    return this.consultaModel.save(consulta);
   }
 }
