@@ -11,7 +11,11 @@ export class ConsultaService {
   ) {}
 
   async getAll(): Promise<Consulta[]> {
-    return this.consultaModel.find();
+    return this.consultaModel.find({
+        order: {
+          id: "DESC",
+      },
+    });
   }
 
   async getOne(id: number): Promise<Consulta> {

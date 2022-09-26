@@ -4,9 +4,7 @@
   "description": "",
   "author": "",
   "private": true,
-  "engines": {
-    "node": "v16.13.2"
-  },
+
   "license": "UNLICENSED",
   "scripts": {
     "prebuild": "rimraf dist",
